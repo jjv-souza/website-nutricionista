@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@media (max-width: 850px) {
+    nav{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .caixaTexto {
+        padding: 60px 20px;
+    }
+}
