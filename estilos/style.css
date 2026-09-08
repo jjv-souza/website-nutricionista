@@ -95,7 +95,8 @@ nav a:hover {
 }
 
 .caixaTexto {
-    width: 50%;
+    width: 70%;
+    font-size: 1.5em;
 
     padding: 60px 40px;
 
@@ -111,7 +112,7 @@ nav a:hover {
 }
 
 .back {
-    width: 50%;
+    width: 30%;
     height: 400px;
 
     background-image: url(../imagens/backgroundPNG.png);
