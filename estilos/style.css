@@ -2,13 +2,13 @@
 
 :root {
     --destaque: #4D5E3B;
-    --letraDestaque: #404A35;
-    --fundoPrincipal: #F7F2EF;
+    --letraDestaque: #3a442f;
+    --fundoPrincipal: #ebe6e4;
     --fundoDestaque: #dfd2c8;
     --fundoCard: #fff;
 }
 
-.botoes {
+.botao {
     background-color: var(--destaque);
     color: white;
     border: none;
@@ -19,6 +19,13 @@
 
     padding: 10px 8px;
     transition: background .3s ease;
+}
+
+.inverso {
+    background-color: transparent;
+    border: 2px solid var(--destaque);
+    color: var(--destaque);
+    font-weight: bolder;
 }
 
 .titulo {
@@ -32,6 +39,8 @@
 .botoes:hover {
     background-color: var(--letraDestaque);
 }
+
+/* ======================================== */
 
 * {
     padding: 0px;
@@ -94,7 +103,7 @@ nav a:hover {
     justify-content: space-between;
 }
 
-.caixaTexto {
+.textoFundo {
     width: 70%;
     font-size: 1.5em;
 
@@ -107,7 +116,7 @@ nav a:hover {
     gap: 20px;
 }
 
-.caixaTexto .texto {
+.textoFundo .texto {
     max-width: 350px;
 }
 
@@ -120,5 +129,116 @@ nav a:hover {
     background-size: cover;
     background-position: center;
 }
+
+/* ==== Sobre ==== */
+.sobre {
+    padding: 60px 0px;
+
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+}
+
+.perfil {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--destaque);
+}
+
+.textoSobre {
+    width: 450px;
+    min-width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+
+/* === Serviços === */
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px;
+
+    gap: 20px;
+}
+
+.servicos .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    padding: 20px;
+}
+
+.servicos .card {
+    width: 180px;
+    min-height: 180px;
+    background-color: var(--fundoCard);
+    border-radius: 5px;
+    font-size: .8em;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.servicos .card .titulo {
+    font-size: 1.3em;
+}
+
+.servicos .card i {
+    color: var(--destaque);
+    font-size: 2em;
+
+}
+
+/* === Duvida === */
+.duvida {
+    width: 100%;
+    background-color: var(--destaque);
+    color: #fff;
+
+    padding: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.duvida h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+    font-size: 1.3em;
+}
+
+.duvida ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* === Como funciona === */
+.comoFunciona {
+    padding: 60px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 

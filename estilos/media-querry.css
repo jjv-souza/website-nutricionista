@@ -4,10 +4,39 @@
     nav{
         display: none;
     }
+
+    .sobre {
+        justify-content: center;
+        padding: 60px 10px;
+    }
+
+    .perfil {
+        width: 250px;
+        height: 250px;
+    }
+
+    .textoSobre {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .sobre {
+        flex-wrap: wrap;
+    }
+
+    .perfil {
+        width: 350px;
+        height: 350px;
+    }    
 }
 
 @media (max-width: 500px) {
-    .caixaTexto {
+    .textoFundo {
         padding: 60px 20px;
+    }
+
+    .duvida h1 {
+        font-size: 2em;
     }
 }
