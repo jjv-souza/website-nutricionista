@@ -19,7 +19,11 @@
     cursor: pointer;
 
     padding: 10px 8px;
-    transition: background .3s ease;
+    transition: background-color .3s ease;
+}
+
+.botao:hover {
+    background-color: var(--letraDestaque);
 }
 
 .inverso {
@@ -27,6 +31,10 @@
     border: 2px solid var(--destaque);
     color: var(--destaque);
     font-weight: bolder;
+}
+
+.inverso:hover {
+    color: var(--fundoPrincipal);
 }
 
 .titulo {
@@ -37,9 +45,7 @@
     color: var(--destaque);
 }
 
-.botoes:hover {
-    background-color: var(--letraDestaque);
-}
+
 
 /* ======================================== */
 

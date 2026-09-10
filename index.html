@@ -12,7 +12,7 @@
 <body>
     <header>
         <section class="cabeca">
-            <img class="logo" src="imagens/logo-bemNutri-pequeno.png" alt="Logo">
+            <img class="logo" src="imagens/logo-bemNutri-pequeno.png" alt="BemNutri">
             <nav id="cabecario">
                 <button id="fechar" class="fechar botao">
                     <i class="fa-solid fa-xmark"></i>
@@ -47,11 +47,11 @@
             
         </section>
 
-        <section class="fundo">
+        <section class="fundo" id="inicio">
             <div class="textoFundo">
                 <div>
                     <h2 class="titulo">Alimentação</h2>
-                    <h2 class="titulo">que tranforma</h2>
+                    <h2 class="titulo">que transforma</h2>
                     <h2 class="titulo">sua vida!</h2>
 
                 </div>
@@ -68,24 +68,24 @@
     </header>
     <main>
         <!-- === Sobre === -->
-        <section class="sobre">
-            <img class="perfil" src="/imagens/minhaNutri.png" alt="">
+        <section class="sobre" id="sobre">
+            <img class="perfil" src="/imagens/minhaNutri.png" alt="Nutricionista">
             <div class="textoSobre">
                 <h1 class="titulo">
                     <i class="fa-brands fa-pagelines"></i>
                     Sobre mim
                 </h1>
 
-                <p class="texto">Sou nutricionista apaixonada pelo oque eu faço e acredito que uma alimentação equilibrada vai muito alem de dietas; é sobre cuidado, escolhas e qualidade de vida.</p>
+                <p class="texto">Sou nutricionista apaixonada pelo que eu faço e acredito que uma alimentação equilibrada vai muito além de dietas; é sobre cuidado, escolhas e qualidade de vida.</p>
 
-                <p class="texto">Meu objetivo é te ajudar a alcançar seus resultados de forma leve, sustentavel e personalizada</p>
+                <p class="texto">Meu objetivo é te ajudar a alcançar seus resultados de forma leve, sustentável e personalizada</p>
 
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="botao inverso">Saiba mais sobre mim</a>
             </div>
         </section>
 
         <!-- === Serviços === -->
-        <section class="servicos">
+        <section class="servicos" id="servicos">
             <h1 class="titulo">
                 <i class="fa-brands fa-pagelines"></i>
                 Serviços
@@ -94,7 +94,7 @@
                 <article class="card">
                     <i class="fa-solid fa-clipboard-list"></i>
                     <h2 class="titulo">Emagrecimento</h2>
-                    <p>Plano alimentar personalizado para perda de peso saudavel.</p>
+                    <p>Plano alimentar personalizado para perda de peso saudável.</p>
                 </article>
                 <article class="card">
                     <i class="fa-solid fa-dumbbell"></i>
@@ -122,11 +122,11 @@
                 <li>✓ Plano 100% personalizado</li>
                 <li>✓ Mais saúde e disposição</li>
                 <li>✓ Resultados duradouros</li>
-                <li>✓ Acompanhamento continuo</li>
+                <li>✓ Acompanhamento contínuo</li>
             </ul>
         </section>
 
-        <section class="comoFunciona">
+        <section class="comoFunciona" id="habilidades">
             <h1 class="titulo">
                 <i class="fa-brands fa-pagelines"></i>
                 Como Funciona
@@ -148,7 +148,7 @@
                         <i class="fa-solid fa-clipboard-list"></i>
                         <h2>2</h2>
                         <h3 class="titulo">Avaliação</h3>
-                        <p>Analisamos seu historico, exames e rotina alimentar.</p>
+                        <p>Analisamos seu histórico, exames e rotina alimentar.</p>
                     </div>
                 </article>
 
@@ -167,14 +167,14 @@
                         <i class="fa-solid fa-chart-line"></i>
                         <h2>4</h2>
                         <h3 class="titulo">Acompanhamento</h3>
-                        <p>Ajuste e suporte continuo para seus resultados</p>
+                        <p>Ajuste e suporte contínuo para seus resultados.</p>
                     </div>
                 </article>
             </div>
         </section>
     </main>
     <footer>
-        <section class="contato">
+        <section class="contato" id="contato">
             <h1 class="titulo">
                 <i class="fa-brands fa-pagelines"></i>
                 Contato
@@ -200,7 +200,7 @@
         </section>
 
         <section class="creditos">
-            <img class="logo" src="/imagens/logo-nutri-inverso-pequeno.png" alt="">
+            <img class="logo" src="/imagens/logo-nutri-inverso-pequeno.png" alt="BemNutri">
             <p>© 2026 Nutricionista. Todos os direitos reservados.</p>
         </section>
     </footer>
@@ -210,11 +210,11 @@
         const fechar = document.getElementById('fechar')
 
         botaoHam.addEventListener('click', () => {
-            cabeca.classList.toggle('ativo')            
+            cabeca.classList.add('ativo')            
         })
 
         fechar.addEventListener('click', () => {
-            cabeca.classList.toggle('ativo')
+            cabeca.classList.remove('ativo')
         })
     </script>
 </body>
