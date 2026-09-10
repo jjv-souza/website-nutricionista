@@ -88,6 +88,10 @@
         width: 350px;
         height: 350px;
     }    
+
+    .beneficios {
+        justify-content: start;
+    }
 }
 
 @media (max-width: 500px) {
